@@ -7,7 +7,15 @@ Stop writing throwaway scripts for batch API jobs. Seed databases, migrate data,
 Running HTTP jobs by hand means lost progress when auth expires mid-session, no record of which files succeeded or failed, and a restart from scratch every time something breaks. Slugger maps folders of JSON files to HTTP endpoints, runs them sequentially with automatic token refresh, and writes a timestamped Markdown report after every folder. Pause mid-run and resume from the exact file where you stopped — nothing is lost.
 Redux Toolkit · Clean Architecture · JWT Ed25519 activation · 487 unit tests
 
-Interested in the source or a demo? Reach out at sonekasenior@gmail.com
+---
+
+## Download
+
+**[Download Slugger v0.2.0 (Windows)](https://github.com/Soneka96/Slugger-Showcase/releases/tag/v0.2.0)**
+
+1. Download and run the installer
+2. Click **New Project**, add a folder of `.json` files, and set an endpoint URL
+3. Click **Run**
 
 ---
 
@@ -73,4 +81,4 @@ The app is fully offline by design. Users run it against internal APIs that may 
 
 ## Source
 
-Source is private. Email sonekasenior@gmail.com for read access.
+Interested in a demo or the source? Email sonekasenior@gmail.com
