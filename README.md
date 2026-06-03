@@ -5,13 +5,13 @@ Stop writing throwaway scripts for batch API jobs. Seed databases, migrate data,
 ![Electron](https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white) ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white)
 
 Running HTTP jobs by hand means lost progress when auth expires mid-session, no record of which files succeeded or failed, and a restart from scratch every time something breaks. Slugger maps folders of JSON files to HTTP endpoints, runs them sequentially with automatic token refresh, and writes a timestamped Markdown report after every folder. Pause mid-run and resume from the exact file where you stopped — nothing is lost.
-Redux Toolkit · Clean Architecture · JWT Ed25519 activation · 555 unit tests
+Redux Toolkit · Clean Architecture · JWT Ed25519 activation · 777 unit tests
 
 ---
 
 ## Download
 
-**[Download Slugger v0.2.1 (Windows)](https://github.com/Soneka96/Slugger-Showcase/releases/tag/v0.2.1)**
+**[Download Slugger v0.2.4 (Windows)](https://github.com/Soneka96/Slugger-Showcase/releases/tag/v0.2.4)**
 
 1. Download and run the installer
 2. Click **New Project**, add a folder of `.json` files, and set an endpoint URL
@@ -42,7 +42,7 @@ Every run is saved to history with a timestamped Markdown report per folder. Whe
 - **Run history** — every past run stored with file count, status badge, and a direct link to the report; auto-opens the failing file on error
 - **Per-file detail view** — raw request content and last API response, pretty-printed; open any response line directly in VS Code or Cursor
 - **Multi-folder select** — pick multiple folders at once from the system picker; drag to reorder
-- **Project export / import** — share a full project config as a `.slugger.json` file; missing paths flagged on import; export requires Pro
+- **Project export / import** — share a project config as a `.slugger.json` file; portable by default so it opens correctly on any machine; set the root folder once on import and all paths resolve automatically; export requires Pro
 - **Free tier batching** — free tier runs up to 5 folders or 50 files per batch; auto-stop is always resumable free; Resume after a manual pause requires Pro
 - **JWT licensing** — Ed25519 asymmetric; free tier always available; pro tier upgrades without restart; individual features can be unlocked via `features[]` claim
 
@@ -64,7 +64,7 @@ Every file's last response is stored and pretty-printed — copy it, open it in 
 | **State** | Redux Toolkit · Clean Architecture |
 | **Storage** | SQLite (better-sqlite3) |
 | **Auth / licensing** | JWT EdDSA (Ed25519) · jose |
-| **Tests** | 555 unit tests · Vitest |
+| **Tests** | 777 unit tests · Vitest |
 
 ---
 
